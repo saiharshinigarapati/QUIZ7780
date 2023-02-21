@@ -1,0 +1,26 @@
+<html>
+    <a href="/">Home</a>
+ 
+        <h1> </h1>
+   
+    <body>
+        <table>
+        <tr>
+        <th>city</th>
+        <th>state</th>
+        <th>population</th>
+        <th>lat</th>
+        <th>lon</th>
+    </tr>
+    {% for i in results %}
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+        <td>{{i[3]}}</td>
+        <td>{{i[4]}}</td>
+    </tr>
+    {% endfor %}\
+</table>
+    </body>
+</html>
